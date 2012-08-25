@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Github²©¿Íµ®Éú¼Ç£ºruby¡¢jekyll¶¼Íæ¶ùµ°È¥"
+title: "Githubåšå®¢è¯ç”Ÿè®°ï¼šrubyã€jekylléƒ½ç©å„¿è›‹å»"
 description: ""
 category: 
 tags: [ruby, jekyll, github, blog]
