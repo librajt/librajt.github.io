@@ -5,10 +5,6 @@ description: ""
 category: 
 tags: [ruby, jekyll, github, blog]
 ---
-##
-
-###How are you :D
+##to do
 
 {% include JB/setup %}
-
-####edit by notepad2
