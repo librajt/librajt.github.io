@@ -9,9 +9,9 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : librajt
-tagline: librajt
-author : librajt
+title : librajt.me
+tagline: 
+author : 
   name : Libra J.T. Ren
   email : librajt@live.cn
   github : librajt
@@ -81,7 +81,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : librajt
+      short_name : jekyllbootstrap
     livefyre :
       site_id : 123
     intensedebate :
