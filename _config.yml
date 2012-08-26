@@ -10,9 +10,9 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : librajt.github.com
-tagline: 
+tagline: false
 author : 
-  name : Libra J.T. Ren
+  name : librajt
   email : librajt@live.cn
   github : librajt
   twitter : librajt
