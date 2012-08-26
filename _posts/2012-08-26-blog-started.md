@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Github博客诞生记：Ruby、jekyll统统玩儿蛋去"
-description: ""
+description: "博客开篇，记录遇到的问题及解决方案。"
 category: 
-tags: [ruby, jekyll, github, blog]
+tags: [ruby, jekyll, github]
 ---
 {% include JB/setup %}
 
@@ -61,7 +61,9 @@ Ruby 的安装比较顺利，有 Windows 下的一键安装包。按教程们说
 
 - 虽然让 Ruby 玩儿蛋去了，但似乎在修改主题的时候，还需要用到 Orz...
 
+###最后
 
+希望好好利用这个博客。嗯。。
 
 
 
