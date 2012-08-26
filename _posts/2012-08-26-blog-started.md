@@ -45,8 +45,6 @@ Ruby 的安装比较顺利，有 Windows 下的一键安装包。按教程们说
 
 马上把 jekyll bootstrap 的包 push 到 GitHub 上，整个世界都清静了 (→ →) 。本机环境上没有装 Ruby ，建立文章直接用 Copy/Paste 已有文件的方式。
 
-***
-
 ###收获
 
 - GitHub 使用 Pages 需要到 Repo 的 Admin 页面 Options 的 GitHub Pages 开启功能。
