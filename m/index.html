@@ -2,16 +2,31 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>welcome</title>
-		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<link rel="shortcut icon" type="image/x-icon" href="320/i/favicon.ico">
-		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="320/i/ico57.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="320/i/ico72.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="320/i/ico114.png">
+		<title>welcome</title>
+		<!-- 遵循自适应设计(RWD, Responsive Web Design)的原则，页面呈现宽度适应屏幕 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+		<!-- 允许应用全屏模式运行，通常称为独立模式 (standalone mode) 可以通过 window.navigator.standalone 属性来区别是否是独立模式运行 -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<!-- Web App 在主屏显示的图标 (默认57x57) 对不同的设备可以指定多个图标 precomposed 高光 -->
+		<link rel="apple-touch-icon-precomposed" sizes="57x57"   for="iPhone"        href="320/i/ico57.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" for="iPhone Retina" href="320/i/ico114.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72"   for="iPad"          href="320/i/ico72.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" for="iPad Retina"   href="320/i/ico144.png">
+		<!-- 应用启动时显示的图像 (320x460 / 640x960) -->
 		<link rel="apple-touch-startup-image" sizes="320x460" href="320/i/startup.png">
 		<link rel="apple-touch-startup-image" sizes="640x920" href="320/i/startup@2x.png">
+		
+		
+		<link rel="apple-touch-startup-image" sizes="2048x1496" for="iPad Retina landscape" href="icon-2048x1496.png" media="screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)">
+		<link rel="apple-touch-startup-image" sizes="1536x2008" for="iPad Retina portrait"  href="icon-1536x2008.png" media="screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait)  and (-webkit-min-device-pixel-ratio: 2)">
+		<link rel="apple-touch-startup-image" sizes="1024x748"  for="iPhone Retina"         href="icon-1024x748.png"  media="screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:landscape)">
+		<link rel="apple-touch-startup-image" sizes="768x1004"  for="iPhone Retina"         href="icon-768x1004.png"  media="screen and (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) ">
+		<link rel="apple-touch-startup-image" sizes="640x920"  for="iPhone Retina"          href="icon-640x920.png"   media="screen and (max-device-width:480px) and (-webkit-min-device-pixel-ratio: 2)">
+		<link rel="apple-touch-startup-image" sizes="320x460"  for="iPhone"                 href="icon-320x460.png"   media="screen and (max-device-width:320)">
+		
+		
 		<link rel="stylesheet" type="text/css" href="320/c/g.css">
 	</head>
 	<body>
@@ -21,4 +36,3 @@
 	</body>
 </html>
 
- 
