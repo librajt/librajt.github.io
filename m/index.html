@@ -75,6 +75,9 @@
 				.startup{text-indent:-99em;height:460px;background-image:url(320/i/startup-iphone-retina-portrait.png)}
 			}
 
+			@media (min-width:321px) {
+				.match:after{content:"min-width:321px";}
+			}
 
 			// Landscape phones and down
 			@media (max-width: 480px) {
@@ -140,6 +143,10 @@
 				d.querySelector('.test').innerHTML = res;
 			})(document);
 		</script>
+		
+		<h3>Match</h3>
+		<div class="match">Match Result: </div>
+
 
 	</body>
 </html>

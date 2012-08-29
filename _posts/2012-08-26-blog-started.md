@@ -33,7 +33,7 @@ Ruby 的安装比较顺利，有 Windows 下的一键安装包。按教程们说
 
 	gem install rake
 
-无心插柳。
+无心插柳。或者安装环境的时候，已经安装了这个工具了。
 
 三度重来，纠结于 jekyll 命令无法运行，于是想了想 rake 命令生成的 .md 文件是如何转换成 .html 文件的。开始怀疑 是 jekyll 的某个命令能够编译并生成 .html 文件，但 forke 了几个已有博客源码，发现并没有对应的 .html 文件。好嘛，这才注意到 GitHub 支持 jekyll ，教程们说的输入命令
 
@@ -43,7 +43,11 @@ Ruby 的安装比较顺利，有 Windows 下的一键安装包。按教程们说
 
 预览！！预览！！！
 
-马上把 jekyll bootstrap 的包 push 到 GitHub 上，整个世界都清静了 (→ →) 。本机环境上没有装 Ruby ，建立文章直接用 Copy/Paste 已有文件的方式。
+马上把 jekyll bootstrap 的包 push 到 GitHub 上，整个世界都清静了 (→ →) 。本机环境上没有装 Ruby ，建立文章直接用 Copy/Paste 已有文件的方式。如果用 rake 命令，也还是挺方便的，输入
+
+	rake post title="your post title"
+
+即可在 `_post` 目录下建立日期前缀的 .md 文件，效果与 Copy/Paste 已有文件的方式相同。
 
 ###收获
 
