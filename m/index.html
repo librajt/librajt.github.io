@@ -75,8 +75,8 @@
 				.startup{text-indent:-99em;height:460px;background-image:url(320/i/startup-iphone-retina-portrait.png)}
 			}
 
-			@media (min-width:321px) {
-				.match:after{content:"min-width:321px";}
+			@media (device-width:768px) {
+				.match:after{content:"device-width:768px";}
 			}
 
 			// Landscape phones and down
@@ -146,6 +146,14 @@
 		
 		<h3>Match</h3>
 		<div class="match">Match Result: </div>
+		
+		
+		<img srgc="http://1.1.1.1/" alt id="img">
+		<script>
+			var obj = document.querySelector('#img');
+			//obj.src="";
+			//setTimeout("document.body.removeChlld(obj);", 1000);
+		</script>
 
 
 	</body>
