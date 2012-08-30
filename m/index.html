@@ -14,11 +14,23 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		
 		<!-- Web App 在主屏显示的图标 precomposed 指定高光 -->
-		<link rel="apple-touch-icon-precomposed" sizes="72x72"   for="iPad"          href="320/i/ico-ipad.png">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" for="iPad Retina"   href="320/i/ico-ipad-retina.png">
+		<link 
+			rel="apple-touch-icon-precomposed" 
+			sizes="72x72"   for="iPad"          
+			href="320/i/ico-ipad.png">
+		<link 
+			rel="apple-touch-icon-precomposed" 
+			sizes="144x144" for="iPad Retina"   
+			href="320/i/ico-ipad-retina.png">
 		
-		<link rel="apple-touch-icon-precomposed" sizes="57x57"   for="iPhone"        href="320/i/ico-iphone.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" for="iPhone Retina" href="320/i/ico-iphone-retina.png">
+		<link 
+			rel="apple-touch-icon-precomposed" 
+			sizes="57x57"   for="iPhone"        
+			href="320/i/ico-iphone.png">
+		<link 
+			rel="apple-touch-icon-precomposed" 
+			sizes="114x114" for="iPhone Retina" 
+			href="320/i/ico-iphone-retina.png">
 		
 		<!-- 应用启动时显示的图像 -->
 		<link 
@@ -112,6 +124,12 @@
 			}
 			@media (device-width:320px) {
 				.match:after{content:"device-width:320px";}
+			}
+			@media (width:320px) {
+				.match:after{content:"width:320px";}
+			}
+			@media (width:480px) {
+				.match:after{content:"width:480px";}
 			}
 
 			// Landscape phones and down
