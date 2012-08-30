@@ -58,21 +58,17 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 优质的 NativeApp 会在程序启动时显示启动画面，在提升产品气质的同时，也能顺便做点适当的产品宣传。为 WebApp 添加启动画面，是通过设置 apple-touch-startup-image 
 
 	/* for iPad */
-	<link 
-		rel="apple-touch-startup-image"  
+	<link rel="apple-touch-startup-image"  
 		href="startup-ipad-landscape.png"        
 		media="(device-width:768px) and (orientation:landscape)">
-	<link 
-		rel="apple-touch-startup-image"  
+	<link rel="apple-touch-startup-image"  
 		href="startup-ipad-portrait.png"         
 		media="(device-width:768px) and (orientation:portrait) ">
-	<link 
-		rel="apple-touch-startup-image"  
+	<link rel="apple-touch-startup-image"  
 		href="startup-ipad-retina-landscape.png" 
 		media="(device-width:768px) and (orientation:landscape) 
 			and (-webkit-min-device-pixel-ratio: 2)">
-	<link 
-		rel="apple-touch-startup-image"  
+	<link rel="apple-touch-startup-image"  
 		href="startup-ipad-retina-portrait.png"  
 		media="(device-width:768px) and (orientation:portrait)  
 			and (-webkit-min-device-pixel-ratio: 2)">
@@ -88,21 +84,17 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 这里要说明一下， iPad 上支持的横竖屏启动画面，无关乎是在哪种情况下添加书签到主屏的。但是 iPhone 是不支持横屏启动的，有兴趣的话，可以用下面的代码试试
 
 	/* for iPhone 过度的写法 */
-	<link 
-		rel="apple-touch-startup-image" 
+	<link rel="apple-touch-startup-image" 
 		href="startup-iphone-landscape.png"        
 		media="(device-width:320px) and (orientation:landscape)">
-	<link 
-		rel="apple-touch-startup-image" 
+	<link rel="apple-touch-startup-image" 
 		href="startup-iphone-portrait.png"         
 		media="(device-width:320px) and (orientation:portrait) ">
-	<link 
-		rel="apple-touch-startup-image" 
+	<link rel="apple-touch-startup-image" 
 		href="startup-iphone-retina-landscape.png" 
 		media="(device-width:320px) and (orientation:landscape) 
 			and (-webkit-min-device-pixel-ratio: 2)">
-	<link 
-		rel="apple-touch-startup-image" 
+	<link rel="apple-touch-startup-image" 
 		href="startup-iphone-retina-portrait.png"  
 		media="(device-width:320px) and (orientation:portrait)  
 			and (-webkit-min-device-pixel-ratio: 2)">
@@ -110,12 +102,10 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 起初以为是我设置或打开的方式不对，后来一想，在 iPhone 上，主屏幕确实不可以横过来呀。好吧，可以做为依据了。于是，比较优质的写法是
 
 	/* for iPhone 优质的写法 */
-	<link 
-		rel="apple-touch-startup-image" 
+	<link rel="apple-touch-startup-image" 
 		href="startup-iphone-landscape.png"        
 		media="(device-width:320px)">
-	<link 
-		rel="apple-touch-startup-image" 
+	<link rel="apple-touch-startup-image" 
 		href="startup-iphone-retina-landscape.png" 
 		media="(device-width:320px) and (-webkit-min-device-pixel-ratio: 2)">
 
