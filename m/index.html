@@ -21,62 +21,97 @@
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" for="iPhone Retina" href="320/i/ico-iphone-retina.png">
 		
 		<!-- 应用启动时显示的图像 -->
-		<link rel="apple-touch-startup-image" sizes="1024x748"  for="iPad landscape"          href="320/i/startup-ipad-landscape.png"          media="(min-device-width:481px) and (max-device-width:1024px) and (orientation:landscape)">
-		<link rel="apple-touch-startup-image" sizes="768x1004"  for="iPad portrait"           href="320/i/startup-ipad-portrait.png"           media="(min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait) ">
-		<link rel="apple-touch-startup-image" sizes="2048x1496" for="iPad Retina landscape"   href="320/i/startup-ipad-retina-landscape.png"   media="(min-device-width:481px) and (max-device-width:1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)">
-		<link rel="apple-touch-startup-image" sizes="1536x2008" for="iPad Retina portrait"    href="320/i/startup-ipad-retina-portrait.png"    media="(min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait)  and (-webkit-min-device-pixel-ratio: 2)">
+		<link 
+			rel="apple-touch-startup-image" 
+			sizes="1024x748"  for="iPad landscape"          
+			href="320/i/startup-ipad-landscape.png"          
+			media="(device-width:768px) and (orientation:landscape)">
+		<link 
+			rel="apple-touch-startup-image" 
+			sizes="768x1004"  for="iPad portrait"           
+			href="320/i/startup-ipad-portrait.png"           
+			media="(device-width:768px) and (orientation:portrait) ">
+		<link 
+			rel="apple-touch-startup-image" 
+			sizes="2048x1496" for="iPad Retina landscape"   
+			href="320/i/startup-ipad-retina-landscape.png"   
+			media="(device-width:768px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)">
+		<link 
+			rel="apple-touch-startup-image" 
+			sizes="1536x2008" for="iPad Retina portrait"    
+			href="320/i/startup-ipad-retina-portrait.png"    
+			media="(device-width:768px) and (orientation:portrait)  and (-webkit-min-device-pixel-ratio: 2)">
 		<!-- iPhone 并不支持区分横竖屏 -->
-		<link rel="apple-touch-startup-image" sizes="480x300"   for="iPhone landscape"        href="320/i/startup-iphone-landscape.png"        media="(max-device-width:320px) and (orientation:landscape)">
-		<link rel="apple-touch-startup-image" sizes="320x460"   for="iPhone portrait"         href="320/i/startup-iphone-portrait.png"         media="(max-device-width:320px) and (orientation:portrait) ">
-		<link rel="apple-touch-startup-image" sizes="960x600"   for="iPhone Retina landscape" href="320/i/startup-iphone-retina-landscape.png" media="(max-device-width:480px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)">
-		<link rel="apple-touch-startup-image" sizes="640x920"   for="iPhone Retina portrait"  href="320/i/startup-iphone-retina-portrait.png"  media="(max-device-width:480px) and (orientation:portrait)  and (-webkit-min-device-pixel-ratio: 2)">
+		<link 
+			rel="apple-touch-startup-image" 
+			sizes="480x300"   for="iPhone landscape"        
+			href="320/i/startup-iphone-landscape.png"        
+			media="(device-width:320px) and (orientation:landscape)">
+		<link 
+			rel="apple-touch-startup-image" 
+			sizes="320x460"   for="iPhone portrait"         
+			href="320/i/startup-iphone-portrait.png"         
+			media="(device-width:320px) and (orientation:portrait) ">
+		<link 
+			rel="apple-touch-startup-image" 
+			sizes="960x600"   for="iPhone Retina landscape" 
+			href="320/i/startup-iphone-retina-landscape.png" 
+			media="(device-width:320px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)">
+		<link 
+			rel="apple-touch-startup-image" 
+			sizes="640x920"   for="iPhone Retina portrait"  
+			href="320/i/startup-iphone-retina-portrait.png"  
+			media="(device-width:320px) and (orientation:portrait)  and (-webkit-min-device-pixel-ratio: 2)">
 		
 		<link rel="stylesheet" type="text/css" href="320/c/g.css">
 		
 		<style>
 			.icon,.startup{background-size:100%;background-repeat:no-repeat;}
 			
-			@media (min-device-width:481px) and (max-device-width:1024px) {
+			@media (device-width:768px) {
 				.icon{text-indent:-99em;width:72px;height:72px;background-image:url(320/i/ico-ipad.png)}
 			}
-			@media (min-device-width:481px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio: 2) {
+			@media (device-width:768px) and (-webkit-min-device-pixel-ratio: 2) {
 				.icon{text-indent:-99em;width:72px;height:72px;background-image:url(320/i/ico-ipad-retina.png)}
 			}
-			@media (max-device-width:480px) {
+			@media (device-width:320px) {
 				.icon{text-indent:-99em;width:57px;height:57px;background-image:url(320/i/ico-iphone.png)}
 			}
-			@media (max-device-width:480px) and (-webkit-min-device-pixel-ratio: 2) {
+			@media (device-width:320px) and (-webkit-min-device-pixel-ratio: 2) {
 				.icon{text-indent:-99em;width:57px;height:57px;background-image:url(320/i/ico-iphone-retina.png)}
 			}
 			
 			
-			@media (min-device-width:481px) and (max-device-width:1024px) and (orientation:landscape) {
+			@media (device-width:768px) and (orientation:landscape) {
 				.startup{text-indent:-99em;height:748px;background-image:url(320/i/startup-ipad-landscape.png)}
 			}
-			@media (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait)  {
+			@media (device-width:768px) and (orientation:portrait)  {
 				.startup{text-indent:-99em;height:1004px;background-image:url(320/i/startup-ipad-portrait.png)}
 			}
-			@media (min-device-width:481px) and (max-device-width:1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2) {
+			@media (device-width:768px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2) {
 				.startup{text-indent:-99em;height:748px;background-image:url(320/i/startup-ipad-retina-landscape.png)}
 			}
-			@media (min-device-width:481px) and (max-device-width:1024px) and (orientation:portrait)  and (-webkit-min-device-pixel-ratio: 2) {
+			@media (device-width:768px) and (orientation:portrait)  and (-webkit-min-device-pixel-ratio: 2) {
 				.startup{text-indent:-99em;height:1004px;background-image:url(320/i/startup-ipad-retina-portrait.png)}
 			}
-			@media (max-device-width:320px) and (orientation:landscape) {
+			@media (device-width:320px) and (orientation:landscape) {
 				.startup{text-indent:-99em;height:300px;background-image:url(320/i/startup-iphone-landscape.png)}
 			}
-			@media (max-device-width:320px) and (orientation:portrait)  {
+			@media (device-width:320px) and (orientation:portrait)  {
 				.startup{text-indent:-99em;height:460px;background-image:url(320/i/startup-iphone-portrait.png)}
 			}
-			@media (max-device-width:480px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2) {
+			@media (device-width:320px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2) {
 				.startup{text-indent:-99em;height:300px;background-image:url(320/i/startup-iphone-retina-landscape.png)}
 			}
-			@media (max-device-width:480px) and (orientation:portrait)  and (-webkit-min-device-pixel-ratio: 2) {
+			@media (device-width:320px) and (orientation:portrait)  and (-webkit-min-device-pixel-ratio: 2) {
 				.startup{text-indent:-99em;height:460px;background-image:url(320/i/startup-iphone-retina-portrait.png)}
 			}
 
 			@media (device-width:768px) {
 				.match:after{content:"device-width:768px";}
+			}
+			@media (device-width:320px) {
+				.match:after{content:"device-width:320px";}
 			}
 
 			// Landscape phones and down

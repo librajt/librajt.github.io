@@ -33,11 +33,15 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 
 你会发现，添加 WebApp 到主屏时，系统会将当前浏览的页面进行截图以生成一个 ICON ，这个 ICON 是通过设置 apple-touch-icon 自定义
 
-	<link rel="apple-touch-icon-precomposed" href="ico-ipad.png">
-	<link rel="apple-touch-icon"             href="ico-ipad-retina.png">
+	<link rel="apple-touch-icon-precomposed" 
+		href="ico-ipad.png">
+	<link rel="apple-touch-icon"             
+		href="ico-ipad-retina.png">
 	
-	<link rel="apple-touch-icon"             href="ico-iphone.png">
-	<link rel="apple-touch-icon-precomposed" href="ico-iphone-retina.png">
+	<link rel="apple-touch-icon"             
+		href="ico-iphone.png">
+	<link rel="apple-touch-icon-precomposed" 
+		href="ico-iphone-retina.png">
 
 上面的四行代码，通过对比 href 属性指向的文件名，可以判断它们的用处吧。这里区别了 iPhone 和 iPad ，是由于两类设备使用的 ICON 尺寸是不一致的，而且，对于是否 Retina 屏，为了达到较好的显示效果，也建议使用不同的尺寸。它们使用的尺寸如下：
 
@@ -53,10 +57,25 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 
 优质的 NativeApp 会在程序启动时显示启动画面，在提升产品气质的同时，也能顺便做点适当的产品宣传。为 WebApp 添加启动画面，是通过设置 apple-touch-startup-image 
 
-	<link rel="apple-touch-startup-image"  href="startup-ipad-landscape.png"        media="(device-width:768px) and (orientation:landscape)">
-	<link rel="apple-touch-startup-image"  href="startup-ipad-portrait.png"         media="(device-width:768px) and (orientation:portrait) ">
-	<link rel="apple-touch-startup-image"  href="startup-ipad-retina-landscape.png" media="(device-width:768px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)">
-	<link rel="apple-touch-startup-image"  href="startup-ipad-retina-portrait.png"  media="(device-width:768px) and (orientation:portrait)  and (-webkit-min-device-pixel-ratio: 2)">
+	/* for iPad */
+	<link 
+		rel="apple-touch-startup-image"  
+		href="startup-ipad-landscape.png"        
+		media="(device-width:768px) and (orientation:landscape)">
+	<link 
+		rel="apple-touch-startup-image"  
+		href="startup-ipad-portrait.png"         
+		media="(device-width:768px) and (orientation:portrait) ">
+	<link 
+		rel="apple-touch-startup-image"  
+		href="startup-ipad-retina-landscape.png" 
+		media="(device-width:768px) and (orientation:landscape) 
+			and (-webkit-min-device-pixel-ratio: 2)">
+	<link 
+		rel="apple-touch-startup-image"  
+		href="startup-ipad-retina-portrait.png"  
+		media="(device-width:768px) and (orientation:portrait)  
+			and (-webkit-min-device-pixel-ratio: 2)">
 
 这是为 WebApp 在 iPad 上添加启动动画，除了像 ICON 一样区分了是否 Retina 屏外，还区分了屏幕方向 orientation 。每种情况使用的启动图片尺寸如下：
 
@@ -68,15 +87,37 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 
 这里要说明一下， iPad 上支持的横竖屏启动画面，无关乎是在哪种情况下添加书签到主屏的。但是 iPhone 是不支持横屏启动的，有兴趣的话，可以用下面的代码试试
 
-	<link rel="apple-touch-startup-image" href="startup-iphone-landscape.png"        media="(device-width:320px) and (orientation:landscape)">
-	<link rel="apple-touch-startup-image" href="startup-iphone-portrait.png"         media="(device-width:320px) and (orientation:portrait) ">
-	<link rel="apple-touch-startup-image" href="startup-iphone-retina-landscape.png" media="(device-width:320px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)">
-	<link rel="apple-touch-startup-image" href="startup-iphone-retina-portrait.png"  media="(device-width:320px) and (orientation:portrait)  and (-webkit-min-device-pixel-ratio: 2)">
+	/* for iPhone 过度的写法 */
+	<link 
+		rel="apple-touch-startup-image" 
+		href="startup-iphone-landscape.png"        
+		media="(device-width:320px) and (orientation:landscape)">
+	<link 
+		rel="apple-touch-startup-image" 
+		href="startup-iphone-portrait.png"         
+		media="(device-width:320px) and (orientation:portrait) ">
+	<link 
+		rel="apple-touch-startup-image" 
+		href="startup-iphone-retina-landscape.png" 
+		media="(device-width:320px) and (orientation:landscape) 
+			and (-webkit-min-device-pixel-ratio: 2)">
+	<link 
+		rel="apple-touch-startup-image" 
+		href="startup-iphone-retina-portrait.png"  
+		media="(device-width:320px) and (orientation:portrait)  
+			and (-webkit-min-device-pixel-ratio: 2)">
 
 起初以为是我设置或打开的方式不对，后来一想，在 iPhone 上，主屏幕确实不可以横过来呀。好吧，可以做为依据了。于是，比较优质的写法是
 
-	<link rel="apple-touch-startup-image" href="startup-iphone-landscape.png"        media="(device-width:320px)">
-	<link rel="apple-touch-startup-image" href="startup-iphone-retina-landscape.png" media="(device-width:320px) and (-webkit-min-device-pixel-ratio: 2)">
+	/* for iPhone 优质的写法 */
+	<link 
+		rel="apple-touch-startup-image" 
+		href="startup-iphone-landscape.png"        
+		media="(device-width:320px)">
+	<link 
+		rel="apple-touch-startup-image" 
+		href="startup-iphone-retina-landscape.png" 
+		media="(device-width:320px) and (-webkit-min-device-pixel-ratio: 2)">
 
 两种情况下图片的尺寸如下：
 
