@@ -7,7 +7,7 @@
 		<title>welcome</title>
 		
 		<!-- 遵循自适应设计(RWD, Responsive Web Design)的原则，页面呈现宽度适应屏幕 -->
-		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+		<meta name="viewport" content="width=2047,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 		
 		<!-- 允许应用全屏模式运行，通常称为独立模式 (standalone mode) 可以通过 window.navigator.standalone 属性来区别是否是独立模式运行 -->
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -83,32 +83,32 @@
 			
 			
 			@media (device-width:768px) and (orientation:landscape) {
-				.startup{text-indent:-99em;height:748px;background-image:url(320/i/startup-ipad-landscape.png)}
+				.startup{text-indent:-99em;width:1024px;height:748px;background-image:url(320/i/startup-ipad-landscape.png)}
 			}
 			@media (device-width:768px) and (orientation:portrait)  {
-				.startup{text-indent:-99em;height:1004px;background-image:url(320/i/startup-ipad-portrait.png)}
+				.startup{text-indent:-99em;width:768px;height:1004px;background-image:url(320/i/startup-ipad-portrait.png)}
 			}
 			@media (device-width:768px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2) {
-				.startup{text-indent:-99em;height:748px;background-image:url(320/i/startup-ipad-retina-landscape.png)}
+				.startup{text-indent:-99em;width:1024px;height:748px;background-image:url(320/i/startup-ipad-retina-landscape.png)}
 			}
 			@media (device-width:768px) and (orientation:portrait)  and (-webkit-min-device-pixel-ratio: 2) {
-				.startup{text-indent:-99em;height:1004px;background-image:url(320/i/startup-ipad-retina-portrait.png)}
+				.startup{text-indent:-99em;width:768px;height:1004px;background-image:url(320/i/startup-ipad-retina-portrait.png)}
 			}
 			@media (device-width:320px) and (orientation:landscape) {
-				.startup{text-indent:-99em;height:300px;background-image:url(320/i/startup-iphone-landscape.png)}
+				.startup{text-indent:-99em;width:480px;height:300px;background-image:url(320/i/startup-iphone-landscape.png)}
 			}
 			@media (device-width:320px) and (orientation:portrait)  {
-				.startup{text-indent:-99em;height:460px;background-image:url(320/i/startup-iphone-portrait.png)}
+				.startup{text-indent:-99em;width:320px;height:460px;background-image:url(320/i/startup-iphone-portrait.png)}
 			}
 			@media (device-width:320px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2) {
-				.startup{text-indent:-99em;height:300px;background-image:url(320/i/startup-iphone-retina-landscape.png)}
+				.startup{text-indent:-99em;width:480px;height:300px;background-image:url(320/i/startup-iphone-retina-landscape.png)}
 			}
 			@media (device-width:320px) and (orientation:portrait)  and (-webkit-min-device-pixel-ratio: 2) {
-				.startup{text-indent:-99em;height:460px;background-image:url(320/i/startup-iphone-retina-portrait.png)}
+				.startup{text-indent:-99em;width:320px;height:460px;background-image:url(320/i/startup-iphone-retina-portrait.png)}
 			}
 
-			@media (device-width:768px) {
-				.match:after{content:"device-width:768px";}
+			@media (device-width:1440px) {
+				.match:after{content:"device-width:1440px";}
 			}
 			@media (device-width:320px) {
 				.match:after{content:"device-width:320px";}
@@ -135,7 +135,6 @@
 			// Large desktop
 			@media (min-width: 1200px) {
 			}
-			
 		</style>
 	</head>
 	<body>
@@ -195,6 +194,7 @@
 			//obj.src="";
 			//setTimeout("document.body.removeChlld(obj);", 1000);
 		</script>
+		
 
 
 	</body>
