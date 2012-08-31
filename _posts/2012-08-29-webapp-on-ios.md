@@ -23,15 +23,15 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 
 	<meta name="apple-mobile-web-app-capable" content="yes">
 
-或者称为独立模式 (standalone mode) 运行，可以通过 js 方法 window.navigator.standalone 属性来区别是 WebApp 是独立模式运行还是浏览器模式运行。
+或者称为独立模式 (standalone mode) 运行。可以通过 js 方法 window.navigator.standalone 属性来区别是 WebApp 是独立模式运行还是浏览器模式运行。
 
 到此为止，你的 WebApp 已经可以实现 NativeApp 的表现了。在浏览器中将 WebApp 添加到主屏，通过主屏的快捷方式访问，发现 WebApp 已经可以全屏运行了。
 
 除此之外，还可以为 WebApp 添加更多设置让 WebApp 更加 NativeApp-Like 。
 
-###自定义 ICON
+###自定义 icon
 
-你会发现，添加 WebApp 到主屏时，系统会将当前浏览的页面进行截图以生成一个 ICON ，这个 ICON 是通过设置 apple-touch-icon 自定义
+你会发现，添加 WebApp 到主屏时，系统会将当前浏览的页面进行截图以生成一个 icon ，这个 icon 是通过设置 apple-touch-icon 自定义
 
 	<link rel="apple-touch-icon-precomposed" 
 		href="ico-ipad.png">
@@ -43,15 +43,15 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 	<link rel="apple-touch-icon-precomposed" 
 		href="ico-iphone-retina.png">
 
-上面的四行代码，通过对比 href 属性指向的文件名，可以判断它们的用处吧。这里区别了 iPhone 和 iPad ，是由于两类设备使用的 ICON 尺寸是不一致的，而且，对于是否 Retina 屏，为了达到较好的显示效果，也建议使用不同的尺寸。它们使用的尺寸如下：
+上面的四行代码，通过对比 href 属性指向的文件名，可以判断它们的用处吧。这里区别了 iPhone 和 iPad ，是由于两类设备使用的 icon 尺寸是不一致的，而且，对于是否 Retina 屏，为了达到较好的显示效果，也建议使用不同的尺寸。它们使用的尺寸如下：
 
 	尺寸	普通屏	Retina
-	iPad	72x7x	144x144
+	iPad	72x72	144x144
 	iPhone	57x57	114x114
 
 图片尺寸必须严格要求，否则不能正常使用。图片格式建议 png24 。
 
-此外，如果 apple-touch-icon 后面增加一个 -precomposed ，那么显示在主屏上的 ICON 会被系统增加一个高光效果。
+此外，如果 apple-touch-icon 后面增加一个 -precomposed ，那么显示在主屏上的 icon 会被系统增加一个高光效果。
 
 ###自定义启动画面
 
@@ -73,13 +73,13 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 		media="(device-width:768px) and (orientation:portrait)  
 			and (-webkit-min-device-pixel-ratio: 2)">
 
-这是为 WebApp 在 iPad 上添加启动动画，除了像 ICON 一样区分了是否 Retina 屏外，还区分了屏幕方向 orientation 。每种情况使用的启动图片尺寸如下：
+这是为 WebApp 在 iPad 上添加启动动画，除了像 icon 一样区分了是否 Retina 屏外，还区分了屏幕方向 orientation 。每种情况使用的启动图片尺寸如下：
 
 	尺寸	普通屏		Retina
 	横屏	1024x748	2048x1496
 	竖屏	768x1004	1536x2008
 
-图片格式可以为 png24 或 jpg 。相对于添加自定义 ICON 的设置代码，这里的 link 标签还增加了一个 media 属性，它使用了 media query 来标识 iPad 设备并区分横竖屏，否则，相同的代码会前后覆盖，影响效果。关于 media query 后面将会有篇 [文章](#todo) 详细说明。
+图片格式可以为 png24 或 jpg 。相对于添加自定义 icon 的设置代码，这里的 link 标签还增加了一个 media 属性，它使用了 media query 来标识 iPad 设备并区分横竖屏，否则，相同的代码会前后覆盖，影响效果。关于 media query 后面将会有篇 [文章](#todo) 详细说明。
 
 这里要说明一下， iPad 上支持的横竖屏启动画面，无关乎是在哪种情况下添加书签到主屏的。但是 iPhone 是不支持横屏启动的，有兴趣的话，可以用下面的代码试试
 
@@ -114,7 +114,7 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 	尺寸	普通屏		Retina
 	iPhone	320x460		640x920
 
-对于设置 ICON 与启动画面，可以用不同设备浏览 [这个页面](#todo) 并添加到主屏查看分别使用的图片。git。。。
+对于设置 icon 与启动画面，可以用不同设备浏览 [这个页面](/WebAppHelper/package/AddToHomeScreen) 并添加到主屏查看分别使用的图片。
 
 以上内容在 iPhone4S/iOS5 、 iPod4/iOS5 、 iPad2/iOS5 上测试通过，欢迎在其它设备进行测试，感谢反馈。
 
