@@ -103,10 +103,10 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 
 	/* for iPhone 优质的写法 */
 	<link rel="apple-touch-startup-image" 
-		href="startup-iphone-landscape.png"        
+		href="startup-iphone-portrait.png"        
 		media="(device-width:320px)">
 	<link rel="apple-touch-startup-image" 
-		href="startup-iphone-retina-landscape.png" 
+		href="startup-iphone-retina-portrait.png" 
 		media="(device-width:320px) and (-webkit-min-device-pixel-ratio: 2)">
 
 两种情况下图片的尺寸如下：
