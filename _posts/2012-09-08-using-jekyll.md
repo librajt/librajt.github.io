@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "WINDOWS下安装jekyll并在本地预览"
-description: ""
+description: "Window环境下借助msysGit控制台安装jekyll，并配置运行本地服务器在本地预览github网站。"
 category: 
 tags: [ruby, jekyll]
 ---
