@@ -43,10 +43,18 @@ weinre 的工作原理是，通过本地服务器代理获取页面 dom 结构�
 
 为方便使用，可以建立一个 bat 脚本，输入命令
 
-	start http://10.1.53.20:8080
-	node weinre --boundHost 10.1.53.20
+	start http://192.168.137.78:8080
+	node weinre --boundHost 192.168.137.78
 
 并保存，在需要远程调试的时候，直接运行 bat 脚本就ok啦:D
+
+win7 下脚本不在 weinre 目录下时，会因找不到文件报错，可以先先进入到该目录下再执行命令。修改 bat 脚本内容为：
+
+	start http://192.168.137.78:8080
+	c:
+	cd\
+	cd "Program Files\nodejs\node_modules\weinre"
+	node weinre --boundHost 192.168.137.78
 
 当然，这里的调试只提供了有限的功能，反正只是为了满足有限的需求嘛，将就着用吧。必要时，还是得靠桌面浏览器 + 模拟 ua 完成调试。
 
