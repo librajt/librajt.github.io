@@ -29,7 +29,7 @@ tags: [ruby, jekyll]
 
 测试安装是否成功。
 
-4 在启动服务器前，如果博文文件有 utf-8 编码的，需要打开 Ruby 安装目录下的 `lib\ruby\gems\1.9.1\gems\jekyll-0.11.2\lib\jekyllconvertible.rb` 文件（找不到可以搜索），把
+4 在启动服务器前，如果博文文件有 utf-8 编码的，需要打开 Ruby 安装目录下的 `lib\ruby\gems\1.9.1\gems\jekyll-0.11.2\lib\jekyll\convertible.rb` 文件（找不到可以搜索，版本号可能会有不同），把
 
 	self.content = File.read(File.join(base, name))
 
