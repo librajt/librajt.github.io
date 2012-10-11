@@ -7,6 +7,8 @@ tags: [webapp, iOS, media query]
 ---
 {% include JB/setup %}
 
+	10.11更新iPhone5适配
+
 当下， WebApp 与 NativeApp 打的火热， WebApp 借助各种低成本的优势在 HTML5 大潮中与 NativeApp 叫板。虽然它的性能短板目前还不能完全动摇 NativeApp 的地位，但它的 NativeApp-Like 表现，足够让 HTML5er 兴奋一阵了。
 
 WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会对主要应用设备——移动设备做了优化。在 HTML5 的帮助下，把一个 WebApp 站点包装成为 NativeApp 的形式，只需要添加几行简单的代码而已。
@@ -18,6 +20,13 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 
 关于 WebApp 页面如何在移动设备上显示，后面将会有篇 [文章](#todo) 详细说明。
+
+对于 iPhone5 ，为了从主屏启动时不显示上下黑边，将 width 设置移除
+
+	<!--优质写法-->
+	<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+
+由于 viewport 会自动计算未设置的值，因此这样的设置在 iPhone4/4S 上同样能够正常显示页面，不必依靠 js 分别设置了。
 
 保证 WebApp 页面的正常显示后，设置页面可以全屏运行
 
@@ -108,11 +117,14 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 	<link rel="apple-touch-startup-image" 
 		href="startup-iphone-retina-portrait.png" 
 		media="(device-width:320px) and (-webkit-min-device-pixel-ratio: 2)">
+	<link rel="apple-touch-startup-image" 
+		href="startup-iphone-5-portrait.png" 
+		media="(device-width:320px) and (device-height:568px) and (-webkit-min-device-pixel-ratio: 2)">
 
 两种情况下图片的尺寸如下：
 
-	尺寸	普通屏		Retina
-	iPhone	320x460		640x920
+	尺寸	普通屏		Retina		5
+	iPhone	320x460		640x920		640x1096
 
 对于设置 icon 与启动画面，可以用不同设备浏览 [这个页面](/WebAppHelper/package/AddToHomeScreen) 并添加到主屏查看分别使用的图片。
 
