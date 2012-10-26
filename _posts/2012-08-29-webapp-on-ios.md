@@ -50,7 +50,7 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 		href="ico-ipad-retina.png">
 	
 	<link rel="apple-touch-icon"             
-		sizes="57x57"
+		not-need-sizes="57x57"
 		href="ico-iphone.png">
 	<link rel="apple-touch-icon-precomposed" 
 		sizes="114x114"
