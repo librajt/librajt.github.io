@@ -37,7 +37,7 @@ content 值中填写各参数，其中 width 设置了 viewport 的宽度， dev
 
 当然，这种情况并不是一成不变的，就目前来说， 320px 这个值已虽然是比较普遍的值，但也有一些特殊值，比如 360px（三星Note） 、400px（三星Note2）。
 
-为了确定设备的 device-width 值，可以使用一个 [测试页面](#PageRuler) 通过 js 代码来动态获取。`注意：页面取出的屏幕分辨率在某些 Android 手机上并不准确，请以设备的参数列表中的数值为准。`
+为了确定设备的 device-width 值，可以使用一个 [测试页面](http://librajt.github.com/WebAppHelper/package/PageRuler/) 通过 js 代码来动态获取。`注意：页面取出的屏幕分辨率在某些手机上并不准确，请以设备的参数列表中的数值为准。`
 
 测试页面二维码：
 <img src="http://www.qrcn.net/api?chs=150x150&chl=http://librajt.github.com/WebAppHelper/package/PageRuler/" alt="测试页面地址：http://librajt.github.com/WebAppHelper/package/PageRuler/">
