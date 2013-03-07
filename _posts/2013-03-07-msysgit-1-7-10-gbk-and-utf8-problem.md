@@ -3,7 +3,7 @@ layout: post
 title: "msysGit1.7.10版本以上出现的中文文件名乱码问题"
 description: "msysGit 1.7.10 版本以上 clone 出由旧版本管理的代码库，出现中文乱码问题的解决"
 category: 
-tags: [git]
+tags: [git, msysGit]
 ---
 {% include JB/setup %}
 

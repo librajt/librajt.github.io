@@ -3,7 +3,7 @@ layout: post
 title: "注册一个美国区的AppleID"
 description: ""
 category: 
-tags: [ruby, jekyll]
+tags: [appleid, ios]
 ---
 {% include JB/setup %}
 
