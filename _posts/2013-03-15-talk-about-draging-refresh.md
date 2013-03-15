@@ -26,7 +26,7 @@ tags: [ue, app, webapp, stream]
 这是大多数 app 的下拉刷新功能表现，有一段时间，我觉得这种箭头的变化有点奇怪：为何从状态A变到状态B时，箭头反向了，而状态B的箭头是向上的，而文字说明却是“松手即可刷新”？此时是在告诉用户什么信息，是箭头说的“向上”，还是文字说明的“松手”？
 
 
-那么是翻译的问题吗？墙内用户表示，无法看 [鼻祖Twitter](http://www.geekpark.net/read/view/156022) 客户端的下拉刷新表现，那就看看国外应用 [AppFlow](http://itunes.apple.com/hu/app/id539183053?mt=8) 的下拉刷新英文版吧：
+那么是翻译的问题吗？墙内用户表示，无法看 [鼻祖Twitter](http://www.36kr.com/p/94602.html) 客户端的下拉刷新表现，那就看看国外应用 [AppFlow](http://itunes.apple.com/hu/app/id539183053?mt=8) 的下拉刷新英文版吧：
 
 <img src="/i/2013/03/15/02.jpg" alt="AppFlow客户端截图" title="AppFlow客户端截图">
 
