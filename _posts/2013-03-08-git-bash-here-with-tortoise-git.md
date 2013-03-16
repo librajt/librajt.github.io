@@ -59,9 +59,9 @@ Git for Windows 包含GUI界面，但既然已经习惯了 Tortoise Git 操作�
 
 1. 安装时提示“无法通过Windows Installer服务安装此安装程序包”时，需要更新系统补丁： [下载页面](http://www.microsoft.com/zh-cn/download/details.aspx?id=8483) 中最后一个下载安装即可（XP下）
 
-2. 完整的 msysGit 本地安装包，可以到 [msysGit官方网站](http://msysgit.github.com/) 点击右面的下载入口去到下载页。但它默认提供的是在线安装版本，查看其它版本可以消除上方的过滤器内容，或者直接 [查看fullinstall版本](https://code.google.com/p/msysgit/downloads/list?can=2&q=fullinstall&colspec=Filename+Summary+Uploaded+ReleaseDate+Size+DownloadCount) 
+2. 完整的 msysGit 本地安装包，可以到 [msysGit官方网站](http://msysgit.github.com/) 点击右面的下载入口去到下载页。但它默认提供的是在线安装版本，查看其它版本可以消除上方的过滤器内容，或者直接 [查看fullinstall版本](https://code.google.com/p/msysgit/downloads/list?can=2&q=fullinstall&colspec=Filename+Summary+Uploaded+ReleaseDate+Size+DownloadCount) 选择下载
 
-3. 升级安装时，本想覆盖安装，但由于选错了路径，出现了新旧两个版本。后来索性先删除旧版本，重新安装到了默认系统根目录中
+3. 升级安装 msysGit 时，本想覆盖安装，但由于选错了路径，出现了新旧两个版本。后来索性先删除旧版本，重新安装到了默认系统根目录中
 
 4. 升级完 Tortoise Git 到最新版后，发现旧版本的 Tortoise SVN 右键菜单的图标出现了位置偏差，不知啥原因，顺便直接也升级了 Tortoise SVN 的 [最新版本](http://tortoisesvn.net/downloads.html) ，问题解决
 
