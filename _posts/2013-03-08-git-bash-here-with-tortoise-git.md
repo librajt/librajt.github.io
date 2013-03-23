@@ -2,7 +2,7 @@
 layout: post
 title: "添加Git Bash Here右键菜单"
 description: "Tortoise Git的Window客户端安装后没有实用的Bash Here快捷菜单，但又不习惯 Git for Windows 的GUI版，那就手动移植过来吧"
-category: 
+category: SDE
 tags: [git, bash, TortoiseGit, msysGit]
 ---
 {% include JB/setup %}

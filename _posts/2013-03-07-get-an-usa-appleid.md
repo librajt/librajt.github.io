@@ -2,7 +2,7 @@
 layout: post
 title: "注册一个美国区的AppleID"
 description: ""
-category: 
+category: DEFAULT
 tags: [appleid, ios]
 ---
 {% include JB/setup %}
