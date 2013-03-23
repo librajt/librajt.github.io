@@ -1,6 +1,6 @@
 ---
 layout: page
-title: @librajt
+title: librajt
 tagline: 
 ---
 {% include JB/setup %}
