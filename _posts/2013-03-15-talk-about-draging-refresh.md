@@ -2,8 +2,8 @@
 layout: post
 title: "关于下拉刷新的交互体验"
 description: "常见的下拉刷新、上拉加载更多这样的交互体验，给用户反馈的结果与指引的一些思考"
-category: 
-tags: [ue, app, webapp, stream]
+category: UE
+tags: [app, webapp, stream]
 ---
 {% include JB/setup %}
 

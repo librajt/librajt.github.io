@@ -2,7 +2,7 @@
 layout: post
 title: "使用weinre对WebApp页面dom进行远程调试"
 description: "在nodejs环境下安装weinre对移动设备上的页面进行远程调试实战。"
-category: 
+category: SDE
 tags: [node, weinre, webapp, 调试]
 ---
 {% include JB/setup %}

@@ -2,7 +2,7 @@
 layout: post
 title: "让WebApp在iOS上模拟NativeApp的效果"
 description: "通过meta标签的设置，为添加到主屏的WebApp增加NativeApp的效果。"
-category: 
+category: FE
 tags: [webapp, iOS, media query]
 ---
 {% include JB/setup %}
