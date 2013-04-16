@@ -203,3 +203,7 @@ http://en.wikipedia.org/wiki/Device_independent_pixel
 http://blog.sina.com.cn/s/blog_62ae03a4010116e1.html
 
 [张鑫旭的文章](http://www.zhangxinxu.com/wordpress/2012/08/window-devicepixelratio/) 和 [大漠的文章](http://www.w3cplus.com/css/towards-retina-web.html) 
+
+
+
+http://msdn.microsoft.com/zh-cn/data/cc849094
