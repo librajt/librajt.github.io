@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "Retina显示原理探索"
-description: "Retina显示增大了分辨率，提高了显示质量，却没增大屏幕尺寸，这其中涉及到一些原理，顺便整理了关于显示所能遇到的一些问题。理解文章中提到的概念，能更好的体会手机中页面的显示原理。"
+description: "Retina显示增大了分辨率，提高了显示质量，却没增大屏幕尺寸，文章综合理解了这其中涉及到一些原理，顺便整理了关于显示所能遇到的一些问题。理解文章中提到的概念，能更好的体会手机中页面的显示原理。"
 category: fe
 tags: [retina, ppi, dips]
 ---
 {% include JB/setup %}
+
+显示是个大问题，牵扯内容可能没文章中列出的这么多，大家酌情阅读。
 
 
 ###所谓Retina
@@ -189,21 +191,28 @@ WINDOWS系统中有个 96dpi 的说法，在设置屏幕显示分辨率的时候
 以上内容大多为自己的理解，如有不对的地方，还请指正，非常感谢！
 
 
-###参考资料
 
-Resolution vs. Density vs. Pixel Ratios
+###参考资料和图片来源
+
 http://mir.aculo.us/2012/09/27/resolution-vs-density-vs-pixel-ratios/
 
 http://zh.wikipedia.org/wiki/%E8%A7%86%E7%BD%91%E8%86%9C%E6%98%BE%E7%A4%BA%E5%99%A8
 
 http://en.wikipedia.org/wiki/Device_independent_pixel
 
+http://en.wikipedia.org/wiki/Device_independent_pixel
 
-优化你的网页在Retina屏幕上的显示效果
-http://blog.sina.com.cn/s/blog_62ae03a4010116e1.html
+http://en.wikipedia.org/wiki/Dots_per_inch
 
-[张鑫旭的文章](http://www.zhangxinxu.com/wordpress/2012/08/window-devicepixelratio/) 和 [大漠的文章](http://www.w3cplus.com/css/towards-retina-web.html) 
+http://zh.wikipedia.org/wiki/%E5%88%86%E8%BE%A8%E7%8E%87
 
+http://en.wikipedia.org/wiki/Pixel
 
+http://en.wikipedia.org/wiki/Pixel_density
 
 http://msdn.microsoft.com/zh-cn/data/cc849094
+
+[张鑫旭的文章](http://www.zhangxinxu.com/wordpress/2012/08/window-devicepixelratio/)
+
+[大漠的文章](http://www.w3cplus.com/css/towards-retina-web.html) 
+
