@@ -23,10 +23,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: normal;
-  color: #999;
+  color: #D5F5FF;
   text-rendering: optimizelegibility;
   font-family: 'Advent Pro', sans-serif;
   /*font-family: 'Pontano Sans', sans-serif;*/
+  font-weight: bold;
 }
 
 /* line 35, ../_sass/_base.scss */
@@ -153,6 +154,7 @@ hr {
   padding-bottom: 15px;
   line-height: 25px;
   margin: 0;
+  word-break: break-all;
 }
 
 /* Page header tweaks */
