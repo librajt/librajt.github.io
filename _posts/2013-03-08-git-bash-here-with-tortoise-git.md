@@ -63,7 +63,9 @@ Git for Windows 包含GUI界面，但既然已经习惯了 Tortoise Git 操作�
 
 3. 升级安装 msysGit 时，本想覆盖安装，但由于选错了路径，出现了新旧两个版本。后来索性先删除旧版本，重新安装到了默认系统根目录中
 
-4. 升级完 Tortoise Git 到最新版后，发现旧版本的 Tortoise SVN 右键菜单的图标出现了位置偏差，不知啥原因，顺便直接也升级了 Tortoise SVN 的 [最新版本](http://tortoisesvn.net/downloads.html) ，问题解决
+4. 下载 Tortoise Git [最新版本](https://code.google.com/p/tortoisegit/) 并安装
+
+5. 升级完 Tortoise Git 到最新版后，发现旧版本的 Tortoise SVN 右键菜单的图标出现了位置偏差，不知啥原因，顺便直接也升级了 Tortoise SVN 的 [最新版本](http://tortoisesvn.net/downloads.html) ，问题解决
 
 
 
