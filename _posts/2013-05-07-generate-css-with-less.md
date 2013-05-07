@@ -67,7 +67,7 @@ cube-animation 工具中核心代码包含两部分：生成 keyframes 的代码
 
 1. 由于在 less 中，属性名不能由字符串拼接，因此 .keyframe 调用的时候对前缀及名字的组合采用了手动的方式。不过仍然有人 [用代码生成了keyframe]() ，膜拜大神，但这样的写法，代码结构上稍有弱化，难读，个人不推荐。
 
-1. @venderWebkit 等变量用于做比较，以确定 .keyframe 中 .transform 兼容函数输出代码的前缀。
+1. \@venderWebkit 等变量用于做比较，以确定 .keyframe 中 .transform 兼容函数输出代码的前缀。
 
 1. 代码结构最开始很混乱，目前的结构是优化调整后的结果。。
 
