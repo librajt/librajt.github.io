@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Advent Pro', sans-serif;
   /*font-family: 'Pontano Sans', sans-serif;*/
   font-weight: bold;
+  margin-bottom: .4em;
 }
 
 /* line 35, ../_sass/_base.scss */
