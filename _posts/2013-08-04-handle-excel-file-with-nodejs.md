@@ -2,7 +2,7 @@
 layout: post
 title: "用NODEJS处理EXCEL文件"
 description: "通过引用node-xlsx包，对xlsx文件进行读写，数据以JSON格式进行操作，包含从工作簿到工作表的描述。目前还不能处理xls文件。"
-category: fe
+category: FE
 tags: [js, nodejs, excel]
 ---
 {% include JB/setup %}
