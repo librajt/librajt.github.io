@@ -10,7 +10,7 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : librajt.github.com
+title : librajt.github.io
 tagline: 
 author : 
   name : librajt
@@ -29,7 +29,7 @@ author :
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://librajt.github.com
+production_url : http://librajt.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
