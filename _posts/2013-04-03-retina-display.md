@@ -2,7 +2,7 @@
 layout: post
 title: "Retina显示原理探索"
 description: "Retina显示增大了分辨率，提高了显示质量，却没增大屏幕尺寸，文章综合理解了这其中涉及到一些原理，顺便整理了关于显示所能遇到的一些问题。理解文章中提到的概念，能更好的体会手机中页面的显示原理。"
-category: fe
+category: FE
 tags: [retina, ppi, dips]
 ---
 {% include JB/setup %}
