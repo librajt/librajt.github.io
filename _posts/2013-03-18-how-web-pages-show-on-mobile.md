@@ -25,7 +25,7 @@ viewport 直译为“视口”，它的作用可以这么想象：如同玩一�
 
 之前提到过，viewport 的设置方法是在页面的 head 区增加一个 name 值为 viewport 的 meta 标签，格式是
 
-<?prettify lang=css linenums=true?>
+<?prettify lang=html linenums=true?>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
 content 值中填写各参数，其中 width 设置了 viewport 的宽度， device-width 的意思是设备屏幕的宽度，当然也可以设置为具体的数值，比如 640、320；initial-scale 设置了页面显示的初始缩放值；user-scalable=no 设置页面不能被缩放。viewport 更详细的信息可以参看 [Safari Developer Library 中的描述](https://developer.apple.com/library/safari/#documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html)。
