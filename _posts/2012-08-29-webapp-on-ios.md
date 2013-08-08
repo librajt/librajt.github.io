@@ -17,12 +17,14 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 
 首先，为了保证 WebApp 页面能够在移动设备上完美的显示，需要设置 viewport 标签，使页面适应设备的屏幕宽度
 
+<?prettify lang=css linenums=true?>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 
 关于 WebApp 页面如何在移动设备上显示，后面将会有篇 [文章](#todo) 详细说明。
 
 对于 iPhone5 ，为了从主屏启动时不显示上下黑边，将 width 设置移除
 
+<?prettify lang=css linenums=true?>
 	<!--优质写法-->
 	<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 
@@ -30,6 +32,7 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 
 保证 WebApp 页面的正常显示后，设置页面可以全屏运行
 
+<?prettify lang=css linenums=true?>
 	<meta name="apple-mobile-web-app-capable" content="yes">
 
 或者称为独立模式 (standalone mode) 运行。可以通过 js 方法 window.navigator.standalone 属性来区别是 WebApp 是独立模式运行还是浏览器模式运行。
@@ -42,6 +45,7 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 
 你会发现，添加 WebApp 到主屏时，系统会将当前浏览的页面进行截图以生成一个 icon ，这个 icon 是通过设置 apple-touch-icon 自定义
 
+<?prettify lang=css linenums=true?>
 	<link rel="apple-touch-icon-precomposed" 
 		sizes="72x72"
 		href="ico-ipad.png">
@@ -70,6 +74,7 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 
 优质的 NativeApp 会在程序启动时显示启动画面，在提升产品气质的同时，也能顺便做点适当的产品宣传。为 WebApp 添加启动画面，是通过设置 apple-touch-startup-image 
 
+<?prettify lang=css linenums=true?>
 	/* for iPad */
 	<link rel="apple-touch-startup-image"  
 		href="startup-ipad-landscape.png"        
@@ -96,6 +101,7 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 
 这里要说明一下， iPad 上支持的横竖屏启动画面，无关乎是在哪种情况下添加书签到主屏的。但是 iPhone 是不支持横屏启动的，有兴趣的话，可以用下面的代码试试
 
+<?prettify lang=css linenums=true?>
 	/* for iPhone 过度的写法 */
 	<link rel="apple-touch-startup-image" 
 		href="startup-iphone-landscape.png"        
@@ -114,6 +120,7 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 
 起初以为是我设置或打开的方式不对，后来一想，在 iPhone 上，主屏幕确实不可以横过来呀。好吧，可以做为依据了。于是，比较优质的写法是
 
+<?prettify lang=css linenums=true?>
 	/* for iPhone 优质的写法 */
 	<link rel="apple-touch-startup-image" 
 		href="startup-iphone-portrait.png"        

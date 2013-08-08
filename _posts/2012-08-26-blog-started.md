@@ -17,10 +17,12 @@ tags: [ruby, jekyll, github]
 
 Ruby 的安装比较顺利，有 Windows 下的一键安装包。按教程们说的安装 jekyll ，输入命令
 
+<?prettify lang=bash linenums=true?>
 	gem install jekyll
 
 果不奇然，报错。但是错误信息里包含大量 linux 词汇，看过一遍不知所云，先按教程们说的，更新 Ruby 版本，输入命令
 
+<?prettify lang=bash linenums=true?>
 	gem update --system
 
 运行良好。再次安装 jekyll ，无奈，错误信息是变了，但依然看不懂， Google Baidu 均无可喜进展，倒是又执行了不少命令安装了些东西。
@@ -31,12 +33,14 @@ Ruby 的安装比较顺利，有 Windows 下的一键安装包。按教程们说
 
 卷土重来时，再次被安装 jekyll 的命令打败，不过已经尝试用 rake 命令建立了一篇文章，想起来偶然执行的命令
 
+<?prettify lang=bash linenums=true?>
 	gem install rake
 
 无心插柳。或者安装环境的时候，已经安装了这个工具了。
 
 三度重来，纠结于 jekyll 命令无法运行，于是想了想 rake 命令生成的 .md 文件是如何转换成 .html 文件的。开始怀疑 是 jekyll 的某个命令能够编译并生成 .html 文件，但 forke 了几个已有博客源码，发现并没有对应的 .html 文件。好嘛，这才注意到 GitHub 支持 jekyll ，教程们说的输入命令
 
+<?prettify lang=bash linenums=true?>
 	jekyll --server
 
 只是为了让博客能在本地预览。
@@ -45,6 +49,7 @@ Ruby 的安装比较顺利，有 Windows 下的一键安装包。按教程们说
 
 马上把 jekyll bootstrap 的包 push 到 GitHub 上，整个世界都清静了 (→ →) 。本机环境上没有装 Ruby ，建立文章直接用 Copy/Paste 已有文件的方式。如果用 rake 命令，也还是挺方便的，输入
 
+<?prettify lang=bash linenums=true?>
 	rake post title="your post title"
 
 即可在 `_post` 目录下建立日期前缀的 .md 文件，效果与 Copy/Paste 已有文件的方式相同。

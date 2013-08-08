@@ -14,7 +14,7 @@ tags: [js, nodejs, excel]
 
 Excel 文件不能当普通的二进制文件处理，否则数据结构就被破坏了，于是需要先找个能够处理 Excel 文件的方法。搜索之下，[发现](http://cnodejs.org/topic/50b5a0b2637ffa415506a8c2#51fde51544e76d216ad97ec1)了 node-xlsx 包。由于也没发现其它可用的处理方式，于是先安装看看
 
-<?prettify lang=bash?>
+<?prettify lang=bash linenums=true?>
 	npm i node-xlsx
 
 查找 api 文档和示例代码未果，记得帖子里有说过，源码易懂，所以也翻了源码看看，发现两个接口 parse 和 build ，于是试着写了两行代码，居然成功了！

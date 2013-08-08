@@ -27,10 +27,12 @@ weinre 的工作原理是，通过本地服务器代理获取页面 dom 结构�
 
 安装 weinre ，在 cmd 中切换当前目录到 nodejs 目录，执行命令
 
+<?prettify lang=bash linenums=true?>
 	npm install weinre
 
 等待安装完成。安装成功后，在 node_modults 目录下会生成一个 weinre 目录，进入该目录，输入命令
 
+<?prettify lang=bash linenums=true?>
 	node weinre --boundHost 192.168.137.78
 
 启动服务器（本机ip），它会在本地的 8080 端口生成站点，在桌面浏览器访问 http://192.168.137.78:8080 会看到 weinre 相关信息。
@@ -43,6 +45,7 @@ weinre 的工作原理是，通过本地服务器代理获取页面 dom 结构�
 
 为方便使用，可以建立一个 bat 脚本，输入命令
 
+<?prettify lang=bash linenums=true?>
 	start http://192.168.137.78:8080
 	node weinre --boundHost 192.168.137.78
 
@@ -50,6 +53,7 @@ weinre 的工作原理是，通过本地服务器代理获取页面 dom 结构�
 
 win7 下脚本不在 weinre 目录下时，会因找不到文件报错，可以先先进入到该目录下再执行命令。修改 bat 脚本内容为：
 
+<?prettify lang=bash linenums=true?>
 	start http://192.168.137.78:8080
 	c:
 	cd\

@@ -21,28 +21,31 @@ tags: [ruby, jekyll]
 
 3 打开 msysGit 的 msys.bat 进入控制台，输入命令
 
-<?prettify lang=bash?>
+<?prettify lang=bash linenums=true?>
 	gem install jekyll
 
 直到安装完毕。作为测试，可以重新打开一个 cmd 窗口，输入 
 
-<?prettify lang=bash?>
+<?prettify lang=bash linenums=true?>
 	jekyll --version
 
 测试安装是否成功。
 
 4 在启动服务器前，如果博文文件有 utf-8 编码的，需要打开 Ruby 安装目录下的 `lib\ruby\gems\1.9.1\gems\jekyll-0.11.2\lib\jekyll\convertible.rb` 文件（找不到可以搜索，版本号可能会有不同），把
 
+<?prettify lang=bash linenums=true?>
 	self.content = File.read(File.join(base, name))
 
 替换成
 
+<?prettify lang=bash linenums=true?>
 	self.content = File.read(File.join(base, name), :encoding => "utf-8")
 
 保证后续操作不会因编码问题影响生成本地网站。**如果文件中包含中文，一定要使用UTF8格式，否则本地生成会失效**。
 
 5 在 cmd 中 cd 到 github 根目录，运行命令
 
+<?prettify lang=bash linenums=true?>
 	jekyll --server --auto
 
 启动服务器，待屏幕不再滚动时，再到浏览器打开地址 `http://localhost:4000` 预览。
