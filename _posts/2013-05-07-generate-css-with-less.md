@@ -21,6 +21,7 @@ tags: [less, css, keyframes]
 
 虽然所有幻灯片做的动画效果相同，但它分是分开相对独立做动画的，为了使整个动画效果比较流畅，做动画效果时需要相互协同。由于动画过程包括了当前幻灯片展示期间的状态和展示结束后其的状态，因此可将各幻灯片执行动画的时机采用时间差来连贯起来，这使用了下面的属性：
 
+<?prettify lang=css?>
 	animation-delay
 
 查看源码会发现， delay 值都是负值，这么做的原因是为了让动画开始后，所有的幻灯片都进行动画状态，而不是等到需要展示的时候才开始动画。这样做也免去了设置各幻灯片默认值的麻烦。
@@ -51,6 +52,7 @@ tags: [less, css, keyframes]
 
 事情的起因，是偶然想到查看 Bootstrap 的网络系统生成代码：
 
+<?prettify lang=css?>
 	.spanX (@index) when (@index > 0) {
 		(~".span@{index}") { .span(@index); }
 		.spanX(@index - 1);
