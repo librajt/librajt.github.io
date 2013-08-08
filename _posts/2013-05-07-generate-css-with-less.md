@@ -52,7 +52,7 @@ tags: [less, css, keyframes]
 
 事情的起因，是偶然想到查看 Bootstrap 的网络系统生成代码：
 
-<?prettify lang=css linenums?>
+<?prettify lang=css linenums=true?>
 	.spanX (@index) when (@index > 0) {
 		(~".span@{index}") { .span(@index); }
 		.spanX(@index - 1);

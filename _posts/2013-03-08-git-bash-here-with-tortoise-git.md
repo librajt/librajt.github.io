@@ -13,6 +13,7 @@ Git for Windows 包含GUI界面，但既然已经习惯了 Tortoise Git 操作�
 
 参考了 [这篇文章](http://blog.sina.com.cn/s/blog_4dbcd2730100zxt7.html) 后，先是到虚拟机里安装了 Git for Windows ，然后循址取到了关键的 Git Bash.vbs 文件，内容如下：
 
+<?prettify lang=js linenums=true?>
 	Set fso = CreateObject("Scripting.FileSystemObject")
 	Set shell = CreateObject("WScript.Shell")
 
@@ -36,6 +37,7 @@ Git for Windows 包含GUI界面，但既然已经习惯了 Tortoise Git 操作�
 
 将上面的 .vbs 文件存放到了 msysGit 根目录下之后，造了下面这个 .reg 注册表文件：
 
+<?prettify lang=bash linenums=true?>
 	Windows Registry Editor Version 5.00
 
 	[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shell\git_shell]

@@ -21,10 +21,12 @@ tags: [ruby, jekyll]
 
 3 打开 msysGit 的 msys.bat 进入控制台，输入命令
 
+<?prettify lang=bash?>
 	gem install jekyll
 
 直到安装完毕。作为测试，可以重新打开一个 cmd 窗口，输入 
 
+<?prettify lang=bash?>
 	jekyll --version
 
 测试安装是否成功。

@@ -19,7 +19,7 @@ Excel 文件不能当普通的二进制文件处理，否则数据结构就被�
 
 查找 api 文档和示例代码未果，记得帖子里有说过，源码易懂，所以也翻了源码看看，发现两个接口 parse 和 build ，于是试着写了两行代码，居然成功了！
 
-<?prettify lang=js linenums?>
+<?prettify lang=js linenums=true?>
 	var xlsx = require('node-xlsx');
 
 	// read
@@ -28,12 +28,12 @@ Excel 文件不能当普通的二进制文件处理，否则数据结构就被�
 
 分析一下生成的 JSON 对象，把 Excel 文件描述的很实在，这样取数据或才设置数据的时候就很方便了。不过生成的数据中有太多字段，感觉是没用的。于是试着对它进行了精简，最终得到一个更直观的数据格式
 
-<?prettify lang=js linenums?>
+<?prettify lang=js linenums=true?>
 	{"worksheets":[{"data":[["索引1","索引2","c"]]}]}
 
 直接对数据表与表内数据进行描述，在存储成 Excel文件的时候也没有问题
 
-<?prettify lang=js linenums?>
+<?prettify lang=js linenums=true?>
 	var xlsx = require('node-xlsx');
 	var fs = require('fs');
 
