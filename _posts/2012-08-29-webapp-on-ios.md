@@ -7,7 +7,8 @@ tags: [webapp, iOS, media query]
 ---
 {% include JB/setup %}
 
-	10.11更新iPhone5适配
+	2012.10.11更新iPhone5适配
+	2013.10.12更新iOS7适配
 
 当下， WebApp 与 NativeApp 打的火热， WebApp 借助各种低成本的优势在 HTML5 大潮中与 NativeApp 叫板。虽然它的性能短板目前还不能完全动摇 NativeApp 的地位，但它的 NativeApp-Like 表现，足够让 HTML5er 兴奋一阵了。
 
@@ -52,6 +53,12 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 	<link rel="apple-touch-icon"             
 		sizes="144x144"
 		href="ico-ipad-retina.png">
+	<link rel="apple-touch-icon-precomposed" 
+		sizes="76x76"
+		href="i/ico-ipad-ios7.png">
+	<link rel="apple-touch-icon-precomposed" 
+		sizes="152x152"
+		href="i/ico-ipad-retina-ios7.png">
 	
 	<link rel="apple-touch-icon"             
 		not-need-sizes="57x57"
@@ -59,16 +66,23 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 	<link rel="apple-touch-icon-precomposed" 
 		sizes="114x114"
 		href="ico-iphone-retina.png">
+	<link rel="apple-touch-icon-precomposed" 
+		sizes="120x120"
+		href="i/ico-iphone-retina-ios7.png">
 
-上面的四行代码，通过对比 href 属性指向的文件名，可以判断它们的用处吧。这里区别了 iPhone 和 iPad ，是由于两类设备使用的 icon 尺寸是不一致的，而且，对于是否 Retina 屏，为了达到较好的显示效果，也建议使用不同的尺寸。它们使用的尺寸如下：
+上面的代码通过对比 href 属性指向的文件名，可以判断它们的用处吧。这里区别了 iPhone 和 iPad ，是由于两类设备使用的 icon 尺寸是不一致的，而且，对于是否 Retina 屏，为了达到较好的显示效果，也建议使用不同的尺寸。它们使用的尺寸如下：
 
-	尺寸	普通屏	Retina
-	iPad	72x72	144x144
-	iPhone	57x57	114x114
+	设备	版本	普通屏	Retina
+	iPad	<7  	72x72	144x144
+	iPad	>=7 	76x76	152x152
+	iPhone	<7  	不支持	114x114
+	iPhone	>=7 	57x57	114x114
 
 图片尺寸必须严格要求，否则不能正常使用。图片格式建议 png24 。sizes 属性在 iPhone5 上测试时为必须项。
 
-此外，如果 apple-touch-icon 后面增加一个 -precomposed ，那么显示在主屏上的 icon 会被系统增加一个高光效果。
+所有非视网膜屏的 iPhone 设备都无法使用 iOS 7 ，因此不必提供图标支持。当然，如果没提供新的图标尺寸，设备还会用 iOS 6 相关的图标。
+
+此外，如果 apple-touch-icon 后面增加一个 -precomposed ，那么显示在主屏上的 icon 会被系统增加一个高光效果。在 iOS 7 上，由于图标扁平化，高光效果不再显示。
 
 ###自定义启动画面
 
