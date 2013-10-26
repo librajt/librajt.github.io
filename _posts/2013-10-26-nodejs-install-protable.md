@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NODEJS在Windows中的绿色安装和使用"
+title: "nodejs在Windows中的绿色安装和使用"
 description: "在Win7上安装nodejs和相关modules时，安装完毕却总会出现找不到modules的问题，除了环境变量配置的问题外，还有modules的安装目录问题。"
 category: SDE
 tags: [nodejs, mklink]
