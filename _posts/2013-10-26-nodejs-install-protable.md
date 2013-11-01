@@ -31,7 +31,7 @@ tags: [nodejs, mklink]
 
 ###安装modules
 
-安装 modules 很方便，只要交给 npm 就可以了。比如要安装 bower ，打开命令行，进入到 nodejs 安装目录，在命令行中输入：
+安装 modules 很方便，只要交给 npm 就可以了。比如要安装 bower ，打开命令行，`进入到 nodejs 安装目录`，在命令行中输入：
 
 	npm install bower  // 或者可以简写为 npm i bower
 
@@ -39,7 +39,7 @@ tags: [nodejs, mklink]
 
 完成安装后，在根目录下会生成同 npm 类似的根文件们和子目录，一般情况下没有问题，如果有对应的 node modules 安装成功后，却提示“命令找不到”时，检查是否有对应的文件就可以了。
 
-在安装 modules 时， npm 的参数中可以跟 -g 以全局安装，在此我们不需要，否则可能会把文件下载并安装到 
+在安装 modules 时， npm 的参数中可以跟 -g 以全局安装，`在此我们不需要`，否则可能会把文件下载并安装到 
 
 	C:\Users\<name>\AppData\Roaming\npm
 
@@ -50,7 +50,7 @@ tags: [nodejs, mklink]
 
 window 系统中的一些 modules 在使用时，需要在执行 nodejs 命令所在的路径上能够找到并使用对应 modules 的文件，一般的做法是将 nodejs 根目录下的 node_modules 目录复制到相应的开发根目录。
 
-这样做有个麻烦之处，就是每新增一个 modules 时，如果它需要这样的操作，就需要手动复制一次。
+这样做有个麻烦之处，是每新增一个 modules 时，如果它需要这样的操作，就需要手动复制一次。
 
 在 Win7 的命令行中，有个 mklink 命令，如如需要执行上面的操作，可使用该命令对 nodejs 根目录下的 node_modules 目录生成一个“快捷方式”：
 
