@@ -7,7 +7,7 @@ tags: [nodejs, mklink]
 ---
 {% include JB/setup %}
 
-在文章[《使用weinre对WebApp页面dom进行远程调试》](/2012/08/28/debug-with-weinre)中已经简单说明过安装 nodejs 的过程了，个我比较喜欢绿色的安装方式，所以在此再将安装过程列一遍。
+在文章[《使用weinre对WebApp页面dom进行远程调试》](/2012/08/28/debug-with-weinre)中已经简单说明过安装 nodejs 的过程了，个人比较喜欢绿色的安装方式，所以在此再将安装过程列一遍。
 
 ###安装nodejs
 
