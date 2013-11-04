@@ -33,13 +33,13 @@ tags: [nodejs, mklink]
 
 安装 modules 很方便，只要交给 npm 就可以了。比如要安装 bower ，打开命令行，`进入到 nodejs 安装目录`，在命令行中输入：
 
-	npm install bower  // 或者可以简写为 npm i bower
+	npm install bower -g  // 或者可以简写为 npm i bower -g
 
 在联网状态下，等待程序自动下载并安装，即可完成安装。
 
 完成安装后，在根目录下会生成同 npm 类似的根文件们和子目录，一般情况下没有问题，如果有对应的 node modules 安装成功后，却提示“命令找不到”时，检查是否有对应的文件就可以了。
 
-在安装 modules 时， npm 的参数中可以跟 -g 以全局安装，`在此我们不需要`，否则可能会把文件下载并安装到 
+在安装 modules 之后，如果仍然提示找不到命令，那么在 npm 的参数去掉 -g 安装看是否正常，因为有时添加了参数 -g 否则可能会把文件下载并安装到 
 
 	C:\Users\<name>\AppData\Roaming\npm
 
