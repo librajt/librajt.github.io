@@ -43,7 +43,7 @@ tags: [nodejs, mklink]
 
 	C:\Users\<name>\AppData\Roaming\npm
 
-中去。
+中去。如果还是不正常，就到上面目录下将缺失的两个文件拷贝过来吧。
 
 
 ###用Win7的mklink命令将绿色进行到底
