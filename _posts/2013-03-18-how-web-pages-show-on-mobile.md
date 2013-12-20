@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "页面如何在手机上显示"
+title: "探索viewport：页面如何在手机上显示"
 description: "本文通过对viewport的几个参数的效果进行对比加以解释，说明在各情况下页面是如何显示的"
-category: FE
+category: FED
 tags: [css, html, viewport]
 ---
 {% include JB/setup %}

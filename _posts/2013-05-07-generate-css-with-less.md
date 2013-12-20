@@ -2,7 +2,7 @@
 layout: post
 title: "用LESS递归生成CSS KEYFRAMES代码实现自动轮播的幻灯片"
 description: "用animation制作的自动轮播幻灯片中，按keyframe代码具有的规律，将代码用less的方式生成。实现过程中对less的字符串插值、计算、js表达式、模式匹配等特性进行了实践，生成的代码也对动画过程从侧面进行了较好的描述。"
-category: FE
+category: FED
 tags: [less, css, keyframes]
 ---
 {% include JB/setup %}

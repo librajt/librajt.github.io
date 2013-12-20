@@ -2,7 +2,7 @@
 layout: post
 title: "iOS6的Safari中包含“阅读器”时快速隐藏地址栏"
 description: "iOS6中通过自动滚动页面隐藏地址栏时，如果地址栏中包含“阅读器”按钮，地址栏并不会马上隐藏起来。研究按钮显示的规律后，得到了一个可靠的解决方案。"
-category: FE
+category: FED
 tags: [js, ios, safari]
 ---
 {% include JB/setup %}
