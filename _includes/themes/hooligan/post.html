@@ -10,6 +10,7 @@
 <div class="row">
   <div class="span8">
     {{ content }}
+    <div class="from">From: {{ site.production_url }}{{ page.url }}/</div>
     <hr>
     <div class="pagination btn-group">
       {% if page.previous %}
