@@ -75,8 +75,8 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 	设备	版本	普通屏	Retina
 	iPad	<7  	72x72	144x144
 	iPad	>=7 	76x76	152x152
-	iPhone	<7  	不支持	114x114
-	iPhone	>=7 	57x57	114x114
+	iPhone	<7  	57x57	114x114
+	iPhone	>=7 	不支持	120x120
 
 图片尺寸必须严格要求，否则不能正常使用。图片格式建议 png24 。sizes 属性在 iPhone5 上测试时为必须项。
 
