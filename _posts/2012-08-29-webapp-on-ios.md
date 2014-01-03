@@ -55,12 +55,12 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 		href="ico-ipad-retina.png">
 	<link rel="apple-touch-icon-precomposed" 
 		sizes="76x76"
-		href="i/ico-ipad-ios7.png">
+		href="ico-ipad-ios7.png">
 	<link rel="apple-touch-icon-precomposed" 
 		sizes="152x152"
-		href="i/ico-ipad-retina-ios7.png">
+		href="ico-ipad-retina-ios7.png">
 	
-	<link rel="apple-touch-icon"             
+	<link rel="apple-touch-icon"
 		not-need-sizes="57x57"
 		href="ico-iphone.png">
 	<link rel="apple-touch-icon-precomposed" 
@@ -68,7 +68,7 @@ WebApp 说穿了，就是一个符合 HTML5 标准的 web 站点，只不过会�
 		href="ico-iphone-retina.png">
 	<link rel="apple-touch-icon-precomposed" 
 		sizes="120x120"
-		href="i/ico-iphone-retina-ios7.png">
+		href="ico-iphone-retina-ios7.png">
 
 上面的代码通过对比 href 属性指向的文件名，可以判断它们的用处吧。这里区别了 iPhone 和 iPad ，是由于两类设备使用的 icon 尺寸是不一致的，而且，对于是否 Retina 屏，为了达到较好的显示效果，也建议使用不同的尺寸。它们使用的尺寸如下：
 
